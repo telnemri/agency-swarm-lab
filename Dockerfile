@@ -4,7 +4,8 @@ FROM python:3.10
 WORKDIR /app
 
 # Assuming you're copying the requirements.txt file to the container
-COPY ./ .
+COPY ./OpenSourceSwarm .
+COPY ./requirements.txt .
 
 # Install Python packages within the virtual environment
 RUN pip install -r requirements.txt
